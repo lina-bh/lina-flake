@@ -13,6 +13,7 @@
     envrc
     magit
     marginalia
+    markdown-mode
     nix-mode
     orderless
     org
