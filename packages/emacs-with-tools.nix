@@ -14,6 +14,7 @@ let
       ''
         for emacs in "${emacs-with-packages}/bin"/emacs*; do
           makeWrapper "$emacs" "''${out}/bin/''$(basename "$emacs")" \
+            --unset SHLVL \
             --suffix PATH : "${
               lib.makeBinPath (
                 with pkgs;
